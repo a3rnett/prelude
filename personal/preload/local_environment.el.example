@@ -1,0 +1,40 @@
+;; Paths
+(setenv "JAVA_HOME" "C:/Program Files/Java/jdk1.7.0_51")
+
+(setenv "PATH"
+        (concat
+         "C:\\cygwin\\bin" ";"
+         (concat (getenv "JAVA_HOME") "/bin;")
+         "C:\\Program Files (x86)\\Git\\bin" ";"
+         (getenv "PATH") ";"
+         "C:\\Tools\\grep\\bin" ";"
+         "C:\\Tools\\gnu-dep\\bin" ";"
+         "C:\\chocolatey\\bin" ";"
+         "C:\\Tools\\gradle\\gradle-1.10\\bin" ";"
+         "C:\\Tools\\leiningen"
+         )
+        )
+(setq exec-path
+      (append
+       exec-path
+       '("C:\\cygwin\\bin"
+         "C:\\Program Files (x86)\\Git\\bin"
+         "C:\\Tools\\grep\\bin"
+         "C:\\Tools\\gnu-dep\\bin"
+         "C:\\chocolatey\\bin"
+         "C:\\Tools\\gradle\\gradle-1.10\\bin"
+         "C:\\Tools\\leiningen")
+       )
+      )
+
+;; Package specific paths
+(setq org-directory "COMMON_JOURNAL")
+
+(setq local-realm "personal")
+(setq alternate-realm "work")
+
+;; Networking
+; (setenv "http_proxy" "PROXY_URL")
+; (setenv "https_proxy" "PROXY_URL")
+
+(set-default-font "monofur-11")
