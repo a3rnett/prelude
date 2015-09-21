@@ -7,6 +7,8 @@
 
 (setq org-startup-indented t)
 (setq visual-line-mode t)
+(setq initial-scratch-message "* Scratch Notes\n")
+(setq initial-major-mode 'org-mode)
 
 (setq epa-file-select-keys nil)
 ;; Cache the passphrase
