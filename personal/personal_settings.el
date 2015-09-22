@@ -56,6 +56,7 @@
          "* Diary\n** Theme of the day%?\n** Reflections\n** Favorites\n** Next Up\nEntered on %U\n  %i\n")
         ("p" "password" entry (file (concat org-directory "/" local-realm "/password.org.gpg"))
          "* %^{Title}\n  %^{URL}p %^{USERNAME}p %^{PASSWORD}p")
+        ("a" "Alternate realm templates")
         ("at" "Todo" entry (file+datetree (concat org-directory "/" alternate-realm "/journal.org.gpg"))
          "* TODO %?\n  %i\n")
         ("aj" "Journal" entry (file+datetree (concat org-directory "/" alternate-realm "/journal.org.gpg"))
@@ -71,3 +72,5 @@
        (insert (cookie "~/.emacs.d/personal/resources/oblique-prompts.txt" "" "")))
 (defun journal-prompt () "Get a Journal Prompt."  (interactive)
        (insert (cookie "~/.emacs.d/personal/resources/journal-prompts.txt" "" "")))
+
+(prefer-coding-system 'utf-8)
